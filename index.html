@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <script src = "script.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,
+	initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Sortandlog</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="shortcut icon" href="Лого.png" type="image/png">
+</head>
+<body background= "">
+ <p><font size="200" color="black" style "margin-left: 50px" face= 'STXinwei' "></font></p>
+ <canvas id = "canvas_example"
+ style "margin-right: 1000px"
+  width = 1518 height = 1000
+  style = "border: #333333 solid 0px;">
+  </canvas>	
+	<div id="sidebar">
+	<div class="toggle-btn" onclick="openMenu()">
+	<span></span>
+	<span></span>
+	<span></span>
+	</div>
+	<ul>
+	<li><a onClick='location.href="index.html"'>Sortandlog</li>
+	<li><a onClick='location.href="sort.html"'>Stupid sort</a></li>
+	<li><a onClick='location.href="sort2.html"'>Gnome sort</a></li>
+	<li><a onClick='location.href="sortb.html"'>Bubble sort</a></li>
+	<li><a onClick='location.href="sortsh.html"'>Shake sort</a></li>
+	<li><a onClick='location.href="fibb.html"'>Fibonacci Numbers</a></li>
+	<li><a onClick='location.href="kapr.html"'>Kaprekar number</a></li>
+	<li><a onClick='location.href="kmn.html"'>Камень-ножницы-бумага</a></li>
+	
+	</ul>
+</body>
+</html>
+<script>
+
+	function openMenu(){
+		document.getElementById("sidebar").classList.toggle('active');
+		
+	}
+</script>

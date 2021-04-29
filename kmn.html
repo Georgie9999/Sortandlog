@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <script src = "kmn.js"></script>
+  <title>Камень-ножницы-бумага</title>
+	<meta name="viewport" content="width=device-width,
+	initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="main.css">
+	<link rel="shortcut icon" href="Лого.png" type="image/png">
+ </head>
+ <body>
+ <div id="sidebar">
+	<div class="toggle-btn" onclick="openMenu()">
+	<span></span>
+	<span></span>
+	<span></span>
+	</div>
+	<ul>
+	<li><a onClick='location.href="index.html"'>Sortandlog</li>
+	<li><a onClick='location.href="sort.html"'>Stupid sort</a></li>
+	<li><a onClick='location.href="sort2.html"'>Gnome sort</a></li>
+	<li><a onClick='location.href="sortb.html"'>Bubble sort</a></li>
+	<li><a onClick='location.href="sortsh.html"'>Shake sort</a></li>
+	<li><a onClick='location.href="fibb.html"'>Fibonacci Numbers</a></li>
+	<li><a onClick='location.href="kapr.html"'>Kaprekar number</a></li>
+	<li><a onClick='location.href="kmn.html"'>Камень-ножницы-бумага</a></li>
+	
+	</ul>
+	  </div>
+ <div class="search">
+  <div class="search_div">
+  <input type = "button" style="width:0.00001px; height:30px; background: #ffffff; margin-left: -30px; margin-top: 70px" id = "b1"> </input>
+  <input type="text" placeholder="Играйте!" size="30" style=" border: #000000 solid 5px;font-size:41px; margin-left: 390px; height:70px" id="vx"> </input>
+   <script>
+var input = document.getElementById("vx");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("b1").click();
+  }
+});
+</script>
+
+</div>
+
+ <canvas id = "canvas_example"
+  width = 700 height = 500
+  style = "border: #000000 solid 8px; margin-left: 370px; margin-top: 40px ">
+  </canvas>
+
+ </body>
+</html>
+<script>
+
+	function openMenu(){
+		document.getElementById("sidebar").classList.toggle('active');
+		
+	}
+</script>
