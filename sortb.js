@@ -29,6 +29,7 @@ var h = canvas_example.height;
 	console.log(123123);
 	for (i = 0; i<r; i++)
 	{
+		if(parseInt(x1[i])>=0)
 		T.push(parseInt(x1[i]));		
 	}
 	console.log(T)
