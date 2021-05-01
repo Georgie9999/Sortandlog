@@ -29,6 +29,7 @@ ctx.rect(-5, -5, 1000, 1000);
 	console.log(123123);
 	for (i = 0; i<r; i++)
 	{
+		if(parseInt(x1[i])>=0)
 		T.push(parseInt(x1[i]));		
 	}
 	console.log(T)
@@ -60,11 +61,12 @@ ctx.stroke();
 console.log(T)
 var i = 1;
 function stupidSort(){
-if (T[i]<T[i-1]){
-var tmp = T[i];
-T[i] = T[i-1];
-T[i-1] = tmp;
-i = 0;
+if (T[i]<T[i-1])
+{
+	var tmp = T[i];
+	T[i] = T[i-1];
+	T[i-1] = tmp;
+	i = 0;
 }
 i++;
 return i;
@@ -76,6 +78,7 @@ var q;
 	  q = stupidSort();
       axis(q);	  
 	}
+  	
  setInterval(control, 1000/5);  
 
 
